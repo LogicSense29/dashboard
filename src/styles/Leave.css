@@ -1,0 +1,25 @@
+.leave .leave-two{
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid red; */
+}
+
+
+.leave-two div{
+    padding: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 20%;
+}
+
+.leave-two div:nth-child(1){
+    background-color: #51ACAB;
+}
+
+.leave-two div:nth-child(2){
+    background-color: #5152AC;
+}
+
+.leave-two div:nth-child(3){
+    background-color: #AC9D51;
+}

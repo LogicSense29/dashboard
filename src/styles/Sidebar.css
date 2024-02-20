@@ -1,0 +1,44 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 3rem;
+    text-align: center;
+    height: 100vh;
+}
+
+.sidebar h2{
+    color: #890709;
+}
+
+.profile-div img{
+    clip-path: circle();
+}
+
+.profile-text{
+    color: #890709;
+}
+
+.sidebar-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px red solid; */
+    height: 45%;
+}
+
+.sidebar-navigation div .nav-link{
+    display: flex;
+    align-items: center;
+    color:#890709;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.sidebar-navigation .nav-link:hover{
+    transform: scale(1.1);
+}
+
+.sidebar-navigation .nav-link:active{
+    color: red;
+}

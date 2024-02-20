@@ -1,0 +1,59 @@
+.task h2{
+    color: #890709;
+}
+
+.task .row-two{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+    /* height: 60vh; */
+}
+
+.task-container{
+    border-radius: 5px;
+    border: 1px solid rgba(128,128,128,0.5);
+    background-color: rgba(255,255,255,0.3);
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.task-container > div {
+    /* border: 1px solid brown; */
+    padding: 0.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.task-input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 17px;
+    outline: none;
+    width: 90%;
+    padding: 0.2rem 0;
+    background-color: transparent;
+}
+
+input[type="checkbox"]{
+    accent-color: #890709;
+    
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date div{
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    border: 1px solid #890709;
+    text-align: center;
+    width: 100%;
+}
+
