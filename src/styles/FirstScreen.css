@@ -1,0 +1,223 @@
+.animated-background {
+  position: absolute;
+  left: -100px;
+  background-color: red;
+  height: 1000px;
+  transform: rotate(30deg);
+  animation: animated-background 5s linear 2s infinite;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  padding: 30px 30px;
+  width: 40%;
+  border: 1px rgba(128, 128, 128, 0.3) solid;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.login form {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.login form input {
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px rgba(128, 128, 128, 0.5) solid;
+}
+
+.login form select {
+  font-size: 14px;
+  padding: 15px;
+  color: rgba(128, 128, 128, 0.9);
+}
+
+.login input:focus,
+.login form select:focus {
+  border-color: #890709;
+  box-shadow: 0 0 5px rgba(137, 7, 9, 0.2);
+  outline: none;
+}
+
+.login input[type="password"]::after {
+  content: ‘\f06e’;
+  /* font-family: “Font Awesome 5 Pro”; */
+  font-weight: 900;
+  /* margin: 0.5em; */
+  color: blue;
+}
+
+.login form button {
+  border: none;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: "#890709";
+  transition: background 3s;
+  cursor: pointer;
+}
+
+.login form button:hover {
+  border: none;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle,
+    rgba(148, 31, 33, 1) 35%,
+    rgba(160, 56, 58, 1) 100%
+  );
+}
+
+.login form .resetPassword {
+  align-self: flex-end;
+  color: "#890709";
+}
+
+.login .createAccountContainer {
+  /* color: #890709; */
+  display: flex;
+  gap: 1px;
+}
+
+.other-link {
+  color: #890709;
+  border: none;
+  border-bottom: 1px #890709 solid;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.error {
+  text-align: center;
+  color: #890709;
+}
+
+.other-link:active {
+  color: blue;
+}
+
+.footer {
+  color: #fff;
+}
+
+#firstScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+
+  background: rgb(137, 7, 9);
+  background: radial-gradient(
+    circle,
+    rgb(137, 7, 9) 0%,
+    rgba(101, 9, 121, 1) 35%,
+    rgba(123, 6, 8) 59%,
+    rgb(137, 7, 9) 100%
+  );
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes animated-background {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+    left: 100px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+  }
+  100% {
+    background-color: green;
+    left: 500px;
+  }
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for mobile devices */
+
+  .login {
+    width: 85%;
+    /* border: 1px red solid; */
+  }
+  .login .createAccountContainer {
+    gap: 0.5px;
+  }
+
+  .login form select {
+    /* height: 100%; */
+    padding: 15px !important;
+    color: rgba(128, 128, 128, 0.9);
+  }
+}

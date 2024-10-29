@@ -1,0 +1,154 @@
+.admin {
+  display: flex;
+  height: 100vh;
+}
+
+.adminSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.sideBarUp {
+  display: flex;
+  color: #f5f5f5;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.hideClose {
+  display: none;
+  visibility: hidden;
+}
+
+.adminSidebarContainer {
+  flex: 0.2;
+  background-color: #0d0000;
+  padding: 20px 20px;
+  border-right: 0.5px solid #fff;
+  width: 30vh;
+  transition: 1s ease-out;
+  z-index: 1;
+}
+
+.adminBodyContainer {
+  flex: 0.8;
+  background-color: #f7f7f7;
+  overflow-y: auto;
+  height: 100vh;
+  transition: 1s ease-in;
+}
+
+.admin .removeAdminSidebar {
+  visibility: hidden;
+  width: 0;
+  transition: 1s ease-out;
+}
+
+.resizeAdminBodyContainer {
+  flex-grow: 1;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: rgba(13, 0, 0, 0.5);
+}
+
+.rowItems {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rowItems input[type="text"] {
+  padding: 6% 5%;
+  width: 200px;
+  border: 2px rgba(13, 0, 0, 0.3) solid;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/* input[type="text"]:focus {
+  border: 1px black solid;
+} */
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  background-color: #fcfcfc;
+  width: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.dashboard {
+  height: 100vh;
+  flex: 1;
+}
+
+.adminNavigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.adminNavigation .adminNav-link {
+  display: flex;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: "red";
+  text-decoration: none;
+}
+
+.profile-pic-container {
+  clip-path: circle();
+  background-color: #0d0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: clamp(50px, 100px, 250px);
+  height: clamp(50px, 100px, 250px);
+  object-fit: cover;
+}
+
+.content-modal {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.save-button {
+  margin-top: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  border: 1px #890709 solid;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-button:hover {
+  border: none;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle,
+    rgba(148, 31, 33, 1) 35%,
+    rgba(160, 56, 58, 1) 100%
+  );
+}

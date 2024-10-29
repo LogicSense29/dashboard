@@ -2,15 +2,29 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  /* color: #0d0000; */
 }
-h2{
+
+h2 {
   font-weight: 600;
 }
 
-.task, .inbox, .leave, .settings{
-  background-color: rgba(231,205,205, 0.5);
+h4 {
+  font-weight: 500;
+}
+
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+}
+
+.task,
+.inbox,
+.leave,
+.settings {
+  background-color: rgba(231, 205, 205, 0.5);
   border-radius: 100px 0 0 80px;
   display: flex;
   flex-direction: column;
@@ -18,4 +32,95 @@ h2{
   flex: 1;
   gap: 20px;
   /* border: 1px solid red; */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for mobile devices */
+
+  .admin .removeAdminSidebar {
+    visibility: hidden;
+    width: 0;
+    transition: width 1s ease-out;
+  }
+
+  /* .sideBarUp .hideClose {
+    visibility: hidden;
+    z-index: -1000;
+  } */
+
+  .sideBarUp .close {
+    display: flex !important;
+    visibility: visible;
+    border: 2px #f5f5f5 solid;
+    border-radius: 8px;
+  }
+
+  .adminSidebarContainer {
+    height: 100vh;
+    position: absolute;
+    width: 50vh !important;
+    transition: width 1s ease-in;
+  }
+
+  .admin .adminBodyContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
+    overflow-y: auto;
+    flex: 1 !important;
+    width: 20vw !important;
+  }
+
+  .removeSearchBar {
+    display: none;
+  }
+
+  .contentCardRow .row2CCR {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .adminCardContainer {
+    width: 100% !important;
+  }
+
+  .departments {
+    width: 200vw !important;
+  }
+
+  .adminDashboard .row3 {
+    margin-top: 730px !important;
+    overflow-x: auto;
+  }
+
+  select {
+    padding: 0.5em 1.5em 0.5em 1em !important;
+  }
+
+  .adminDashboard {
+    width: 100vw;
+  }
+
+  .adminDashboard > .row4 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .adminDashboard .row4 > div {
+    flex: 1;
+    width: 100%;
+  }
+
+  .login {
+    width: 100%;
+    border: 1px red solid;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Styles for laptops/desktops */
 }

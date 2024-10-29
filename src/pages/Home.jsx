@@ -21,6 +21,5 @@ export default function Home() {
         <Route path="settings" element={<Settings/>}/>
       </Routes>
     </div>
-    
   )
 }

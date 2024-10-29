@@ -1,0 +1,26 @@
+.addTaskContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.removeTaskInput {
+  display: none;
+}
+
+.addTaskInput {
+  width: 90%;
+  height: 50px;
+  background: transparent;
+  border: 0.5px solid rgba(13, 0, 0);
+}
+
+.addTaskButton {
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #890709;
+  color: #ffffff;
+  clip-path: circle();
+}

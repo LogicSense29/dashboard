@@ -1,0 +1,55 @@
+.adminTaskDashboard {
+  display: flex;
+  gap: 20px;
+  /* width: 100%; */
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px red solid; */
+}
+
+.adminTaskDashboard .row1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: rgba(13, 0, 0, 0.5);
+}
+
+.adminTaskDashboard .rowItems {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.adminTaskDashboard .rowItems input[type="text"] {
+  padding: 6% 5%;
+  width: 200px;
+  border: 1px rgba(13, 0, 0, 0.4) solid;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.adminTaskDashboard .fc-atd,
+.adminTaskDashboard .sc-atd {
+  /* border: 1px red solid;
+  flex: 1; */
+}
+.adminTaskDashboard .fc-atd {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.departmentFolderCon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  border: 2px solid rgba(13, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  color: rgba(13, 0, 0, 0.7);
+}
+
+.departmentFolderCon:hover {
+  background-color: #890709;
+  color: #f5f5f5;
+  cursor: pointer;
+}

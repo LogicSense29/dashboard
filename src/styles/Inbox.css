@@ -1,0 +1,16 @@
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: min-content;
+  overflow-y: scroll;
+  /* border: 1px red solid; */
+}
+#messageBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  padding: 20px;
+}

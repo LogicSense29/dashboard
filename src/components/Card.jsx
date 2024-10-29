@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Card() {
-  return (
-    <div className='card'>
-        
-    </div>
-  )
+  return <div className="card"></div>;
 }
